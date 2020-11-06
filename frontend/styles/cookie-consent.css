@@ -1,0 +1,135 @@
+/************************************************** * CONSENT COMPONENTS **************************************************/
+.consent-ui--close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0 1rem;
+    padding: 0;
+    font-size: 2em;
+    color: #333;
+}
+/************************************************** * CONSENT BANNER **************************************************/
+.consent-ui--banner {
+    position: fixed;
+    z-index: 99999;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 1rem;
+    color: #333;
+    background-color: #f0f0f0;
+}
+.consent-ui--banner-text {
+    margin-bottom: 1rem;
+    text-align: left;
+    line-height: normal;
+}
+.consent-ui--banner-text a {
+    text-decoration: underline;
+}
+.consent-ui--banner-actions {
+    text-align: center;
+}
+.consent-ui--banner-actions .accept {
+    margin-right: 1rem;
+}
+.consent-ui--banner-actions .details {
+    text-decoration: underline;
+    margin-left: 1rem;
+}
+/************************************************** * CONSENT DETAILS **************************************************/
+.consent-ui--details {
+    position: fixed;
+    z-index: 99999;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    padding: 1rem;
+}
+.consent-ui--details-background {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .25);
+    backdrop-filter: blur(10px);
+}
+.consent-ui--details-modal {
+    position: relative;
+    margin-top: auto;
+    margin-bottom: auto;
+    max-height: calc(100vh - 2rem);
+    padding: 1rem;
+    overflow: auto;
+    color: #333;
+    background-color: #fff;
+    box-shadow: 0 0 2rem rgba(0, 0, 0, .5);
+}
+.consent-ui--details-modal h2 {
+    margin: 1rem 0;
+    text-align: center;
+}
+.consent-ui--details-modal p {
+    margin: 0;
+}
+.consent-ui--details-all {
+    margin: 2rem 0;
+}
+.consent-ui--details-all .consent-ui--item-label {
+    font-size: 1.1em;
+    font-weight: bold;
+}
+.consent-ui--item {
+    margin-top: -1px;
+    border-top: 1px solid #999;
+    border-bottom: 1px solid #999;
+}
+.consent-ui--item-label {
+    flex-grow: 1;
+}
+.consent-ui--item-label a {
+    display: block;
+    font-size: 0.7em;
+    color: inherit;
+    opacity: 0.8;
+}
+.consent-ui--item-choices {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+.consent-ui--item-accept button, .consent-ui--item-deny button {
+    padding: 0.5em 1em;
+    border: none;
+    font: inherit;
+    text-decoration: inherit;
+    cursor: pointer;
+    font-size: 0.8em;
+}
+.consent-ui--item-accept button {
+    color: white;
+    background-color: #0a0;
+}
+[data-status="false"] .consent-ui--item-accept {
+    opacity: 0.5;
+}
+.consent-ui--item-deny button {
+    color: white;
+    background-color: #9c1a1a;
+}
+[data-status="true"] .consent-ui--item-deny {
+    opacity: 0.5;
+}
+/************************************************** * CONSENT YOUTBE **************************************************/
+.consent-ui--youtube-approval {
+    text-align: center;
+    padding: 2em 1em;
+    color: #333;
+    background-color: #f0f0f0;
+}
+.consent-ui--youtube-approval button {
+    margin-left: 1em;
+}
